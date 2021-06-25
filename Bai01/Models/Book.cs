@@ -21,9 +21,11 @@
         [StringLength(100, ErrorMessage = "Tựa sách sách không được vượt quá 100 ký tự.")]
         public string Title { get; set; }
 
+        [Required(ErrorMessage = "Mô tả không được trống")]
         [Display(Name = "Mô tả")]
         public string Description { get; set; }
 
+        [Required(ErrorMessage = "Hình ảnh không được trống")]
         [Display(Name = "Hình ảnh")]
         public string ImageCover { get; set; }
 
